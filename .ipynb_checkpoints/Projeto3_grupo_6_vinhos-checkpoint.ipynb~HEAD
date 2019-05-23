@@ -64,12 +64,13 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 2,
+   "execution_count": 33,
    "metadata": {},
    "outputs": [],
    "source": [
     "import pandas as pd\n",
     "import os\n",
+    "import numpy as np\n",
     "from matplotlib import pyplot as plt\n",
     "#from operator import itemgetter"
    ]
@@ -1229,10 +1230,25 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 34,
    "metadata": {},
-   "outputs": [],
-   "source": []
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "A média do preço é de R$42.895833333333336\n",
+      "A média dos pontos é de 89.8407643312102\n"
+     ]
+    }
+   ],
+   "source": [
+    "media_price = np.mean(novo_x.price)\n",
+    "print('A média do preço é de R${0}'.format(media_price))\n",
+    "\n",
+    "media_points = np.mean(novo_x.points)\n",
+    "print('A média dos pontos é de {0}'.format(media_points))"
+   ]
   },
   {
    "cell_type": "code",
